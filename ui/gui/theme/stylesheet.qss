@@ -1,0 +1,31 @@
+/* stylesheet.qss */
+@import 'colors.py';
+@import 'fonts.py';
+
+QMainWindow {
+    background-color: ${bg};
+    color: ${fg};
+    font-family: "${primary}";
+}
+
+QFrame#menuPanel {
+    background-color: ${panel};
+}
+
+QPushButton {
+    background-color: ${button_bg};
+    color: ${fg};
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: ${button_hover};
+}
+
+QTextEdit#logOutput {
+    background-color: ${panel};
+    color: ${fg};
+    font-family: "${monospace}";
+}
